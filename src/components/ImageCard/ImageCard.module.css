@@ -3,13 +3,12 @@
   color: var(--primary-color-base);
   border-radius: 15px;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   width: 290px;
   box-shadow: var(--box-shadow-medium);
+  margin-bottom: 20px;
 }
 
 .imageContainer {

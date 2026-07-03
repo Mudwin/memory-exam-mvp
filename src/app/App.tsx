@@ -3,6 +3,7 @@ import NavButton from "@/components/NavButton";
 import gridIcon from "@/assets/icons/grid-icon.svg";
 import quizletIcon from "@/assets/icons/quizlet-icon.svg";
 import testIcon from "@/assets/icons/question-icon.svg";
+import ViewCardPage from "@/pages/ViewCardPage";
 
 type Page = "view" | "card" | "test";
 
@@ -12,7 +13,14 @@ function App() {
   // const handleNavButtonClick = () => {};
 
   return (
-    <div className="app-container">
+    <>
+      <div className="app-container">
+        <div className="content">
+          {page === "view" && <ViewCardPage />}
+          {page === "card" && <div>Страница просмотра карточек</div>}
+          {page === "test" && <div>Страница теста</div>}
+        </div>
+      </div>
       <div className="nav-buttons">
         <NavButton
           iconSrc={gridIcon}
@@ -39,12 +47,7 @@ function App() {
           Тест
         </NavButton>
       </div>
-      <div className="content">
-        {page === "view" && <div>Страница просмотра всех картин</div>}
-        {page === "card" && <div>Страница просмотра карточек</div>}
-        {page === "test" && <div>Страница теста</div>}
-      </div>
-    </div>
+    </>
   );
 }
 

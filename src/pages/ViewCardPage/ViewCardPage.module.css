@@ -1,0 +1,9 @@
+.container {
+  padding-top: 40px;
+}
+
+.grid {
+  column-count: 3;
+  column-gap: 20px;
+  width: 910px;
+}

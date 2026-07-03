@@ -6,13 +6,10 @@ body {
 }
 
 .app-container {
+  outline: 1px solid blue;
   padding: 10px;
-
-  /* temp */
-  /* display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  align-items: flex-start; */
+  display: flex;
+  justify-content: center;
 }
 
 .nav-buttons {
@@ -20,8 +17,11 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
+
+  position: absolute;
+  top: 40px;
+  left: 0;
 }
 
 .content {
-  /*  */
 }
