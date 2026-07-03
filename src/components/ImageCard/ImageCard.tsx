@@ -10,7 +10,7 @@ const ImageCard = ({ srcUrl, title, author }: ImageCardProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <img src={srcUrl} alt="" />
+        <img src={srcUrl} alt="" loading="lazy" />
       </div>
       <div className={styles.info}>
         <div className={styles.title}>{title}</div>

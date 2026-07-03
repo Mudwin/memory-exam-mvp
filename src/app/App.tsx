@@ -4,20 +4,19 @@ import gridIcon from "@/assets/icons/grid-icon.svg";
 import quizletIcon from "@/assets/icons/quizlet-icon.svg";
 import testIcon from "@/assets/icons/question-icon.svg";
 import ViewCardPage from "@/pages/ViewCardPage";
+import CardsPage from "@/pages/CardsPage";
 
 type Page = "view" | "card" | "test";
 
 function App() {
   const [page, setPage] = useState<Page>("view");
 
-  // const handleNavButtonClick = () => {};
-
   return (
     <>
       <div className="app-container">
         <div className="content">
           {page === "view" && <ViewCardPage />}
-          {page === "card" && <div>Страница просмотра карточек</div>}
+          {page === "card" && <CardsPage />}
           {page === "test" && <div>Страница теста</div>}
         </div>
       </div>
