@@ -5,6 +5,7 @@ import quizletIcon from "@/assets/icons/quizlet-icon.svg";
 import testIcon from "@/assets/icons/question-icon.svg";
 import ViewCardPage from "@/pages/ViewCardPage";
 import CardsPage from "@/pages/CardsPage";
+import TestPage from "@/pages/TestPage";
 
 type Page = "view" | "card" | "test";
 
@@ -17,7 +18,7 @@ function App() {
         <div className="content">
           {page === "view" && <ViewCardPage />}
           {page === "card" && <CardsPage />}
-          {page === "test" && <div>Страница теста</div>}
+          {page === "test" && <TestPage />}
         </div>
       </div>
       <div className="nav-buttons">
