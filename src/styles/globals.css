@@ -1,0 +1,27 @@
+body {
+  background-color: var(--primary-color-base);
+  color: var(--primary-color-white);
+  font-size: 14px;
+  position: relative;
+}
+
+.app-container {
+  padding: 10px;
+
+  /* temp */
+  /* display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: flex-start; */
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.content {
+  /*  */
+}
