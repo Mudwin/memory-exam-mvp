@@ -17,7 +17,7 @@
     font-size: 20px;
   }
 
-  & img {
+  .icon {
     width: 35px;
     height: 35px;
   }
@@ -30,7 +30,7 @@
     padding-inline: 25px;
   }
 
-  &:has(img) {
+  &:has(.icon) {
     padding-inline: 15px;
   }
 }

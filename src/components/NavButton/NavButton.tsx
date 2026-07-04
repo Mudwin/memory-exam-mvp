@@ -28,7 +28,7 @@ const NavButton = ({
           <img className={styles.disabledOnPC} src={iconSrc} alt={page} />
         </>
       ) : (
-        <img src={iconSrc} alt={page} />
+        <img src={iconSrc} alt={page} className={styles.icon} />
       )}
     </button>
   );
