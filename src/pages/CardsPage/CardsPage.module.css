@@ -92,3 +92,23 @@
   justify-content: center;
   width: 100%;
 }
+
+@media (width < 756px) {
+  .container {
+    padding-top: 70px;
+    height: 700px;
+    max-width: 1000px;
+  }
+
+  .cardWrapper {
+    margin-bottom: 40px;
+  }
+
+  .cardTitle {
+    font-size: 25px;
+  }
+
+  .cardAuthor {
+    font-size: 15px;
+  }
+}

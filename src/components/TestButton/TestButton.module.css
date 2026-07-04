@@ -2,13 +2,14 @@
   cursor: pointer;
   outline: 3px solid var(--primary-color-white);
   border-radius: 10px;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   transition-duration: 0.2s;
   user-select: none;
-
+  padding: 10px;
   width: 170px;
   height: 90px;
 
@@ -29,4 +30,16 @@
 .container.error {
   outline-color: var(--primary-color-red);
   color: var(--primary-color-red);
+}
+
+@media (width < 756px) {
+  .container {
+    outline: 2px solid var(--primary-color-white);
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    height: 70px;
+  }
 }

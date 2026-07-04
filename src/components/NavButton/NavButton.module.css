@@ -22,11 +22,48 @@
     height: 35px;
   }
 
+  .disabledOnPC {
+    display: none;
+  }
+
   &:has(span) {
     padding-inline: 25px;
   }
 
   &:has(img) {
     padding-inline: 15px;
+  }
+}
+
+@media (width < 756px) {
+  .button {
+    background-color: var(--primary-color-purple);
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    transition-duration: 0.3s;
+
+    & span {
+      display: none;
+    }
+
+    & img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .disabledOnPC {
+      display: block;
+    }
+
+    &:has(img) {
+      padding-inline: 10px;
+    }
+  }
+
+  .active {
+    background-color: var(--accent-color-purple);
   }
 }

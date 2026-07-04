@@ -41,3 +41,27 @@
   justify-content: center;
   width: 100%;
 }
+
+@media (width < 756px) {
+  .container {
+    justify-content: start;
+    max-width: 700px;
+    padding-top: 80px;
+  }
+
+  .imageContainer {
+    max-height: 400px;
+    height: fit-content;
+  }
+
+  .answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+    margin-bottom: 30px;
+    justify-items: stretch;
+  }
+}
